@@ -46,3 +46,7 @@ jobs:
     - name: Push the docker image
       run: |
         docker push anoobhamza136/capstone:v1
+
+    - name: Deploy the capstone image
+      run: |
+        kubectl apply -f deploy.yaml
